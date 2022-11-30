@@ -29,35 +29,57 @@ public class Number implements Interface.Number {
         }
         return tempNumber;
     }
-
+    private String converttopingu(int number){
+        String pingustring = "";
+        if (number == 0) {
+            pingustring = "In";
+        } else {
+            int temp = number;
+            while (temp > 0) {
+                if (temp % 3 == 0) {
+                    pingustring = "in" + pingustring;
+                } else if (temp % 3 == 1) {
+                    pingustring = "gu" + pingustring;
+                } else {
+                    pingustring = "pin" + pingustring;
+                }
+                temp /= 3;
+            }
+            pingustring = Character.toString(pingustring.charAt(0) - 32) + pingustring.substring(1);
+        }
+        return pingustring;
+    }
+// Rechnen im Tenärsystem nur pingu
     @Override
     public void add(Interface.Number otherNumber) {
         this.number += otherNumber.intValue();
-        System.out.println("Result: " + number);
-
+        System.out.println("Ergebniss in Pingu: " + converttopingu(number));
+        System.out.println("Ergebniss in Natürlichen Zahlen: " + number);
     }
 
     @Override
     public void subtract(Interface.Number otherNumber) {
         this.number -= otherNumber.intValue();
-        System.out.println("Result: " + number);
+        System.out.println("Ergebniss in Pingu: " + converttopingu(number));
+        System.out.println("Ergebniss in Natürlichen Zahlen: " + number);
     }
 
     @Override
     public void multiply(Interface.Number otherNumber) {
         this.number *= otherNumber.intValue();
-        System.out.println("Result: " + number);
-    }
+        System.out.println("Ergebniss in Pingu: " + converttopingu(number));
+        System.out.println("Ergebniss in Natürlichen Zahlen: " + number);}
     @Override
     public void divide(Interface.Number otherNumber) {
         this.number /= otherNumber.intValue();
-        System.out.println("Result: " + number);
-
+        System.out.println("Ergebniss in Pingu: " + converttopingu(number));
+        System.out.println("Ergebniss in Natürlichen Zahlen: " + number);
     }
 
     @Override
     public void power(Interface.Number exponent) {
         this.number = (int) Math.pow(number, exponent.intValue());
+        System.out.println(converttopingu(number));
         System.out.println("Result: " + number);
 
     }
@@ -114,17 +136,17 @@ public class Number implements Interface.Number {
         }
         return false;
     }
-// Due to implententation this won´t be used. Pingu and Dezimal are handled in the same class
+// Due to implementation Method this won´t be used. Pingu and Decimal are handled in the same class
     @Override
     public Interface.Number toPinguNumber() {
 
-        return new Number(number);
+        return null;
     }
 
     @Override
     public Interface.Number toNaturalNumber() {
 
-        return new Number(number);
+        return null;
     }
     // ----------------------------------------------------------------------------------------
     @Override
@@ -153,6 +175,6 @@ public class Number implements Interface.Number {
             pingustring = Character.toString(pingustring.charAt(0) - 32) + pingustring.substring(1);
 
         }
-        return "intvalue() = " + number + "   pingunumber = " + pingustring;
+        return "Integer Wert: " + number + "\nPingu Nummer: " + pingustring;
     }
 }

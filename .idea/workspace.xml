@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="de0359a9-c802-4291-a0ad-255a127ce9f8" name="Changes" comment="">
+    <list default="true" id="de0359a9-c802-4291-a0ad-255a127ce9f8" name="Changes" comment="more advanced">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Number.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Number.java" afterDir="false" />
@@ -56,8 +56,18 @@
       <workItem from="1669642852262" duration="3817000" />
       <workItem from="1669659969855" duration="5392000" />
       <workItem from="1669717889147" duration="74000" />
-      <workItem from="1669734444184" duration="2200000" />
+      <workItem from="1669734444184" duration="3783000" />
+      <workItem from="1669754948392" duration="69000" />
+      <workItem from="1669792871976" duration="6478000" />
     </task>
+    <task id="LOCAL-00001" summary="more advanced">
+      <created>1669736924249</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669736924249</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -73,5 +83,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="more advanced" />
+    <option name="LAST_COMMIT_MESSAGE" value="more advanced" />
   </component>
 </project>
